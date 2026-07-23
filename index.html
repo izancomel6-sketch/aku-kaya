@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Navigator Sekolah</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HOME -->
+<div id="homePage" class="page">
+
+    <div class="overlay">
+
+        <h1>🏫 Navigator Sekolah</h1>
+
+        <p>Pilih destinasi</p>
+
+        <button onclick="bukaPelan('Pejabat')">
+            🏢 Pejabat
+        </button>
+
+        <button onclick="bukaPelan('Bilik Guru')">
+            📚 Bilik Guru
+        </button>
+
+        <button onclick="bukaPelan('Kelas')">
+            🏫 Kelas
+        </button>
+
+        <button onclick="bukaPelan('Tandas')">
+            🚻 Tandas
+        </button>
+
+    </div>
+
+</div>
+
+<!-- PELAN -->
+<div id="mapPage" class="page">
+
+    <button class="backBtn" onclick="kembali()">
+        ← Kembali
+    </button>
+
+    <h2 id="tajukDestinasi"></h2>
+
+    <img src="images/pelan.png" class="pelan">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
